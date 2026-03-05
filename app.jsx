@@ -359,8 +359,8 @@ function RecsPanel({recs}) {
               <div className="rec-desc">{rec.description}</div>
               <div className="rec-action"><strong>Action: </strong>{rec.action}</div>
               {svc && (
-                <a className="rec-cta" href="https://cybersecandi.com/" target="_blank" rel="noopener">
-                  CyberSecAndI: {svc.name} →
+                <a className="rec-cta" href="https://heailthcaire.ai/" target="_blank" rel="noopener">
+                  HEaiLTHCaiRE.ai: {svc.name} →
                 </a>
               )}
             </div>
@@ -386,10 +386,10 @@ function ServicesPanel({recs}) {
     <div className="content-area centered">
       <div className="content-wide fade-up">
         <div style={{textAlign:'center',marginBottom:32}}>
-          <h1 className="section-heading">CyberSecAndI Services</h1>
+          <h1 className="section-heading">HEaiLTHCaiRE.ai Services</h1>
           <p className="section-sub">Services matched to your specific gaps. Highlighted services address weaknesses found in your assessment.</p>
-          <a href="https://cybersecandi.com/" target="_blank" rel="noopener" className="btn btn-primary" style={{marginTop:8}}>
-            Visit cybersecandi.com →
+          <a href="https://HEaiLTHCaiRE.ai/" target="_blank" rel="noopener" className="btn btn-primary" style={{marginTop:8}}>
+            Visit HEaiLTHCaiRE.ai →
           </a>
         </div>
 
@@ -411,7 +411,7 @@ function ServicesPanel({recs}) {
                     {isMatched ? (
                       <div>
                         <div className="svc-gaps">⚠ Addresses {matchingRecs.length} gap{matchingRecs.length>1?'s':''} in your assessment</div>
-                        <a className="rec-cta" href="https://cybersecandi.com/" target="_blank" rel="noopener">Learn More →</a>
+                        <a className="rec-cta" href="https://HEaiLTHCaiRE.ai/" target="_blank" rel="noopener">Learn More →</a>
                       </div>
                     ) : (
                       <div className="svc-covered">✓ You're covered here</div>
@@ -426,11 +426,11 @@ function ServicesPanel({recs}) {
         <div className="contact-card">
           <h3>Ready to strengthen your security?</h3>
           <p style={{color:'var(--text-secondary)',marginBottom:20,lineHeight:1.6}}>
-            Our team at CyberSecAndI can help you implement these recommendations. We offer free initial consultations to discuss your assessment results and build a tailored remediation roadmap.
+            Our team at HEaiLTHCaiRE.ai can help you implement these recommendations. We offer free initial consultations to discuss your assessment results and build a tailored remediation roadmap.
           </p>
           <div style={{display:'flex',gap:12,flexWrap:'wrap'}}>
-            <a href="https://cybersecandi.com/" target="_blank" rel="noopener" className="btn btn-primary">Request Consultation →</a>
-            <a href="https://cybersecandi.com/" target="_blank" rel="noopener" className="btn">Visit Our Website</a>
+            <a href="https://HEaiLTHCaiRE.ai/" target="_blank" rel="noopener" className="btn btn-primary">Request Consultation →</a>
+            <a href="https://HEaiLTHCaiRE.ai/" target="_blank" rel="noopener" className="btn">Visit Our Website</a>
           </div>
         </div>
       </div>
@@ -473,7 +473,7 @@ function ExportPanel({answers, profile, scores, recs}) {
     <table><thead><tr><th>Domain</th><th>Score</th><th>Maturity</th><th>Industry Avg</th></tr></thead><tbody>${pillarRows}</tbody></table>
     <h2>Recommendations (${recs.length})</h2>
     <table><thead><tr><th>Severity</th><th>Recommendation</th><th>Framework</th></tr></thead><tbody>${recRows}</tbody></table>
-    <div class="footer"><strong>CyberSecAndI</strong> — Identify. Detect. Protect.<br/><a href="https://cybersecandi.com/">cybersecandi.com</a><br/><small>We can help you implement these recommendations. Contact us for a free consultation.</small></div>
+    <div class="footer"><strong>HEaiLTHCaiRE.ai</strong> — Identify. Detect. Protect.<br/><a href="https://HEaiLTHCaiRE.ai/">HEaiLTHCaiRE.ai</a><br/><small>We can help you implement these recommendations. Contact us for a free consultation.</small></div>
     </body></html>`);
     w.document.close();
     w.print();
@@ -487,7 +487,7 @@ function ExportPanel({answers, profile, scores, recs}) {
 
         <div className="export-option" onClick={printReport}>
           <span className="export-icon">🖨</span>
-          <div className="export-info"><h4>Print / PDF Report</h4><p>Printable report with scores, recommendations, and CyberSecAndI contact info</p></div>
+          <div className="export-info"><h4>Print / PDF Report</h4><p>Printable report with scores, recommendations, and HEaiLTHCaiRE.ai contact info</p></div>
         </div>
         <div className="export-option" onClick={()=>doExport('js')}>
           <span className="export-icon">📜</span>
@@ -563,7 +563,7 @@ function App() {
           <div className="top-bar-sub">CYBERSECURITY READINESS ASSESSMENT</div>
           <div className="top-bar-right">
             {completed && <span style={{fontSize:12,fontFamily:'var(--font-mono)',color:scores?.maturity?.color}}>Score: {scores?.overall}/100 — {scores?.maturity?.label}</span>}
-            <a href="https://cybersecandi.com/" target="_blank" rel="noopener" className="top-bar-link">🛡 cybersecandi.com ↗</a>
+            <a href="https://HEaiLTHCaiRE.ai/" target="_blank" rel="noopener" className="top-bar-link">🛡 HEaiLTHCaiRE.ai ↗</a>
           </div>
         </div>
         {renderContent()}
