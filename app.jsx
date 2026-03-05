@@ -316,7 +316,7 @@ function ResultsPanel({scores}) {
         )}
 
         <div className="powered-by" style={{marginTop:24,textAlign:'center'}}>
-          Need help improving your score? <a href="https://cybersecandi.com/" target="_blank" rel="noopener">CyberSecAndI</a> can help you close these gaps.
+          Need help improving your score? <a href="https://heailthcaire.ai/" target="_blank" rel="noopener">HEaiLTHCaiRE.ai</a> can help you close these gaps.
         </div>
       </div>
     </div>
