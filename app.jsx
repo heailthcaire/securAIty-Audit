@@ -558,7 +558,7 @@ function App() {
       </div>
       <div className="main">
         <div className="top-bar">
-          <div className="top-bar-title">securAIty<span>-Aaudit</span></div>
+          <div className="top-bar-title">securAIty<span>-Audit</span></div>
           <div className="top-bar-divider"/>
           <div className="top-bar-sub">CYBERSECURITY READINESS ASSESSMENT</div>
           <div className="top-bar-right">
