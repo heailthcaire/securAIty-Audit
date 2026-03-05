@@ -131,7 +131,7 @@ function Welcome({onStart}) {
         ))}
       </div>
       <button className="btn btn-primary btn-lg" onClick={onStart}>Begin Assessment →</button>
-      <div className="powered-by">Powered by <a href="https://cybersecandi.com/" target="_blank" rel="noopener">CyberSec And I</a> — Identify. Detect. Protect.</div>
+      <div className="powered-by">Powered by <a href="https://HEaiLTHCaiRE.ai/" target="_blank" rel="noopener">HEaiLTHCaiRE.ai</a> — Identify. Detect. Protect.</div>
     </div>
   );
 }
