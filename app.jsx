@@ -442,7 +442,7 @@ function ServicesPanel({recs}) {
 function ExportPanel({answers, profile, scores, recs}) {
   const doExport = (type) => {
     const data = {
-      meta:{exported:new Date().toISOString(),tool:'SecureAssess v1.0',poweredBy:'CyberSecAndI — https://cybersecandi.com/'},
+      meta:{exported:new Date().toISOString(),tool:'securAIty-Audit v1.0',poweredBy:'HEaiLTHCaiRE.ai — https://heailthcaire.ai/'},
       companyProfile:profile, answers, scores:{overall:scores.overall,maturity:scores.maturity.label,pillars:scores.pillars},
       recommendations:recs.map(r=>({title:r.title,severity:r.severity,effort:r.effort,action:r.action,framework:r.frameworkRef}))
     };
@@ -464,7 +464,7 @@ function ExportPanel({answers, profile, scores, recs}) {
     const w = window.open('','_blank');
     const pillarRows = Object.values(scores.pillars).map(p=>`<tr><td>${p.icon} ${p.title}</td><td><strong style="color:${p.maturity.color}">${p.score}/100</strong></td><td>${p.maturity.label}</td><td>${p.benchmark}</td></tr>`).join('');
     const recRows = recs.map(r=>`<tr><td><span style="color:${r.severity==='critical'?'#f43f5e':r.severity==='high'?'#f59e0b':'#8b9ec2'}">${r.severity.toUpperCase()}</span></td><td><strong>${r.title}</strong><br/><small>${r.action}</small></td><td>${r.frameworkRef||''}</td></tr>`).join('');
-    w.document.write(`<!DOCTYPE html><html><head><title>SecureAssess Report</title><style>body{font-family:system-ui;max-width:900px;margin:0 auto;padding:40px;color:#1a1a2e}h1{color:#0ea5e9}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{border:1px solid #ddd;padding:10px;text-align:left}th{background:#f5f5f5}small{color:#666}.footer{margin-top:40px;padding-top:20px;border-top:2px solid #0ea5e9;text-align:center;color:#666}</style></head><body>
+    w.document.write(`<!DOCTYPE html><html><head><title>securAIty-Audit Report</title><style>body{font-family:system-ui;max-width:900px;margin:0 auto;padding:40px;color:#1a1a2e}h1{color:#0ea5e9}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{border:1px solid #ddd;padding:10px;text-align:left}th{background:#f5f5f5}small{color:#666}.footer{margin-top:40px;padding-top:20px;border-top:2px solid #0ea5e9;text-align:center;color:#666}</style></head><body>
     <h1>🛡 Cybersecurity Readiness Assessment Report</h1>
     <p>Generated: ${new Date().toLocaleDateString()}</p>
     <h2>Overall Score: <span style="color:${scores.maturity.color}">${scores.overall}/100 — ${scores.maturity.label}</span></h2>
@@ -554,11 +554,11 @@ function App() {
           );
         })}
         <div className="nav-spacer"/>
-        <div className="nav-brand">SecureAssess</div>
+        <div className="nav-brand">securAIty-Audit</div>
       </div>
       <div className="main">
         <div className="top-bar">
-          <div className="top-bar-title">Secure<span>Assess</span></div>
+          <div className="top-bar-title">securAIty<span>-Aaudit</span></div>
           <div className="top-bar-divider"/>
           <div className="top-bar-sub">CYBERSECURITY READINESS ASSESSMENT</div>
           <div className="top-bar-right">
